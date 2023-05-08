@@ -1,24 +1,25 @@
-body{
-font-family: 'Amazon Ember', sans-serif;
+body {
+    font-family: 'Amazon Ember', sans-serif;
     background-color: #ffffff;
     margin: 0px;
-    background-color: black;
-    background-image:url('./img/amazon-digital-city-art-npcp6jc782ixp9zs.jpg');
+    background-size: auto;
     background-repeat: no-repeat;
-    background-color: black;
 }
-#navbar{
-    background: linear-gradient(#fdfdfd,#eeeeee);
-    border-bottom: solid 2px white ;
+
+#navbar {
+    background: linear-gradient(#fdfdfd, #eeeeee);
+    border-bottom: solid 2px white;
     display: flex;
     padding: 7PX;
 
 }
-#navbar img{
+
+#navbar img {
     width: 100px;
     padding-top: 5px;
 }
-#navbar h1{
+
+#navbar h1 {
     color: azure;
     font-weight: 100;
     margin-top: 0rem;
@@ -27,30 +28,36 @@ font-family: 'Amazon Ember', sans-serif;
 
 
 }
-#generalLinks{
+
+#generalLinks {
     display: flex;
     justify-content: center;
     width: 100%;
 }
-#generalLinks a{
+
+#generalLinks a {
     padding: 1rem;
     border: solid 1px white;
     background-color: #e4e5e8;
     border-radius: 4px;
 }
-.roleContainer{
 
-}
-.roleContainer h2{
+.roleContainer {}
+
+.roleContainer h2 {
     text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
 
 }
-.linksContainer{
+
+.linksContainer {
     display: flex;
     justify-content: center;
 
 }
-.linksContainer a{
+
+.linksContainer a {
     padding: 1rem;
     background-color: #e4e5e8;
     border-radius: 4px;
@@ -58,10 +65,30 @@ font-family: 'Amazon Ember', sans-serif;
     color: black;
     border: 1px solid #ccc;
     margin: 2px;
-    transition: box-shadow .5s 
+    transition: box-shadow .5s
 }
-.linksContainer a:hover{
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
-    background-color:#525252 ;
+
+.linksContainer a:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    background-color: #525252;
     color: #ccc;
+}
+
+.grids {
+    margin: auto;
+    text-align: center;
+    background-color: #e4e5e8;
+    width: fit-content;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#smile {
+    bottom: 10px;
+    position: absolute;
+    right: 10px;
+    width: 250px;
+    transform: rotate(-30deg);
 }
