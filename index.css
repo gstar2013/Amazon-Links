@@ -52,6 +52,7 @@ body {
 .linksContainer {
     display: flex;
     flex-wrap: wrap;
+    gap: 2px 5px;
     justify-content: center;
     width: 80%;
     margin: auto;
@@ -65,7 +66,11 @@ body {
     color: black;
     border: 1px solid #ccc;
     margin: 2px;
-    transition: box-shadow .5s
+    transition: box-shadow .5s;
+    flex-grow: 1;
+    text-align: center;
+    max-width: 200px;
+    min-width: 80px;
 }
 
 .linksContainer a:hover {
@@ -86,9 +91,9 @@ body {
 }
 
 #smile {
-    bottom: 10px;
     position: absolute;
     right: 10px;
-    width: 250px;
+    width: 450px;
     transform: rotate(-30deg);
+    top: 80px;
 }
