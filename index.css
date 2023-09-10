@@ -57,6 +57,17 @@ body {
     width: 90%;
     margin: auto;
 }
+.caseContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px 5px;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+.caseContainer div {
+    padding: 30px;
+}
 
 .linksContainer a {
     padding: 1rem 1.5rem;
