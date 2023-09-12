@@ -66,12 +66,13 @@ body {
     margin: auto;
 }
 .caseDiv {
-    border: solid 1px black;
-    background: #e4e5e8;
+    border: solid 1px white;
+    background-color: #e4e5e8;
+    border-radius: 4px;
     flex-grow: 1;
 }
 .caseContainer div {
-    padding: 30px;
+    padding: 10px;
     border-radius: 5px;
     
 }
