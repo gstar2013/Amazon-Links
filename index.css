@@ -68,6 +68,7 @@ body {
 .caseDiv {
     border: solid 1px black;
     background: #e4e5e8;
+    flex-grow: 1;
 }
 .caseContainer div {
     padding: 30px;
