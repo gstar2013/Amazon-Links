@@ -116,3 +116,9 @@ body {
     display: flex ;
     width: 90%;;
 }
+#tc{
+    font-size: 3px;
+    color: #e4e5e8;
+    position: relative;
+    margin: auto 10px;
+}
