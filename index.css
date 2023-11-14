@@ -122,3 +122,17 @@ body {
     position: relative;
     margin: auto 10px;
 }
+.table table, tr, TD{
+    font-size: 15px;
+    border-collapse: collapse;
+    border: 1px solid;
+    margin: auto;
+    padding: 0px 4px;
+}
+.table {
+    width: 95%;
+    margin: auto;
+}
+caption{
+    display: none;
+}
