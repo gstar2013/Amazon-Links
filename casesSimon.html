@@ -13,12 +13,11 @@
     </style>
     <link rel="icon" type="image/x-icon" href="./img/Amazon_icon.png">
 </head>
+<script src="https://www.w3schools.com/lib/w3data.js"></script>
 
 <body>
     <header>
-        <nav id="navbar">
-            <a href="https://www.amazon.co.uk/" target="_blank"><img src="./img/amazonlogo.png" alt="Amazon"></a>
-        </nav>
+        <div w3-include-html="./elements/navbar.html" id="navbar"></div>
     </header>
     <div class="roleContainer">
         <h2>Cases</h2>
@@ -71,12 +70,10 @@
 
         </div>
     </div>
-    <div class="cright">    
-        <img src="./img/pngwing.com.png" alt="" id="smile">
-        <p>© gardsimo 2023</p>
-        <p id="tc">By using this page you agree to the terms and conditions set out by GARDSIMO. Be aware these can change at any time and generally made up on the fly. So GOOD LUCK!!</p>
-    </div>
-
+    <div w3-include-html="./elements/footer.html" class="cright">    
+    <script>
+            w3IncludeHTML();
+            </script>
 
 </body>
 
