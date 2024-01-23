@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cases</title>
+    <link href="./index.css" rel="stylesheet">
+    </link>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/amazon-ember');
+    </style>
+    <link rel="icon" type="image/x-icon" href="./img/Amazon_icon.png">
+</head>
+<script src="https://www.w3schools.com/lib/w3data.js"></script>
+
+<body>
+    <header>
+        <div w3-include-html="./elements/navbar.html" id="navbar"></div>
+    </header>
+    <div class="roleContainer">
+        <h2>Cases</h2>
+
+        <form action="/action_page.php" class="caseContainer">
+            <label for="number">Number</label>
+            <input type="text" id="number" name="number">
+            <label for="vrid">VRID</label>
+            <input type="text" id="vrid" name="vrid"><br><br>
+            <input type="submit" value="Simon">
+            <input type="submit" value="Pete">
+            <input type="submit" value="Ben">
+
+          </form>
+        <div class="caseContainer">
+            <div class="caseDiv">
+                <h3>Requested by BRS1 | AdHoc collection</h3>
+                <p>Hi,<br>Please can we have an adhoc collection for this run? We believe we will overspill this trailer by xx carts.<br>Thanks<br>Simon
+                </p>
+            </div>
+            <div class="caseDiv">
+                <h3>Requested by BRS1 | Cancel and Replace collection</h3>
+                <p>Hi,<br>This run is scheduled too early to utilize this trailer. Please cancel it and reschedule closer to cpt.<br>Thanks<br>Simon
+                </p>
+            </div>
+            <div class="caseDiv">
+                <h3>Requested by BRS1 | Cancel collection</h3>
+                <p>Hi,<br>We have no volume for this run. Please cancel.<br>Thanks<br>Simon
+                </p>
+            </div>
+            <div class="caseDiv">
+                <h3>Requested by BRS1 | Cancel collection</h3>
+                <p>Hi,<br>We have x trailers scheduled and only require x. Please cancel.<br>Thanks<br>Simon
+                </p>
+            </div>
+            <div class="caseDiv">
+                <h3>Requested by BRS1 | Recover collection</h3>
+                <p>Hi,<br>ATS trailer VS-xxx needs to be recovered from BRS1 due to late arrival. Please send a SOLO truck to recover this trailer for VRID xxx.<br>Thanks<br>Simon
+                </p>
+            </div>
+           
+        </div>
+        <div class="caseContainer">
+            <div><p>brs1-shipping@amazon.com</p>      
+            </div>
+            <div><p>eu-roc-ob-cancel-truck@amazon.com</p>
+            </div>
+            <div><p>amazon@royalmail.com<p>   
+            </div>
+
+        </div>
+    </div>
+    <div class="roleContainer">
+        <h2>Escalation</h2>
+        <div class="caseContainer">
+            <div><p>eu-roc-dm-escalation-level1@amazon.com</p></div>
+            <div><p>eu-roc-dm-escalation-level2@amazon.com</p></div>
+            <div><p>eu-roc-dm-escalation-level3@amazon.com</p></div>
+            <div><p>eu-roc-dm-snrmanagers@amazon.com</p></div>
+
+
+        </div>
+    </div>
+    <div w3-include-html="./elements/footer.html" class="cright">    
+    <script>
+            w3IncludeHTML();
+            </script>
+
+</body>
+
+</html>
