@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cases</title>
+    <link href="./index.css" rel="stylesheet">
+    </link>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/amazon-ember');
+    </style>
+    <link rel="icon" type="image/x-icon" href="./img/Amazon_icon.png">
+</head>
+<script src="https://www.w3schools.com/lib/w3data.js"></script>
+
+<body>
+    <header>
+        <div w3-include-html="./elements/navbar.html" id="navbar"></div>
+    </header>
+    <div class="roleContainer">
+        <h2>Cases</h2>
+
+        <form action="/action_page.php" class="caseContainer">
+            <label for="number">Overspill/Excess trailers</label>
+            <input type="text" id="number" name="number" >
+            <label for="trailer">Trailer</label>
+            <input type="text" id="trailer" name="trailer">
+            <label for="vrid">VRID</label>
+            <input type="text" id="vrid" name="vrid"><br><br>
+          </form>
+          <div class="btnContainer">
+                <button id="btnSimon" onclick="buttonFunc('Simon')"><h3>Simon</h3></button>
+                <button id="btnPete" onclick="buttonFunc('Pete')"><h3>Pete</h3></button>
+                <button id="btnBen" onclick="buttonFunc('Ben')"><h3>Ben</h3></button>
+        
+          </div>
+          
+
+        <div class="caseContainer">
+            <div class="caseDiv" id="AH">
+                <h3 id="AHcopy">Requested by BRS1 | AdHoc collection</h3><button onclick="copyFunc('AHcopy')">copy</button>
+                <p id="AHcopyTxt">Hi,<br>Please can we have an adhoc collection for this run? We believe we will overspill this trailer by xx carts.<br>Thanks<br>
+                </p><button onclick="copyFunc('AHcopyTxt')">copy</button>
+            </div>
+            <div class="caseDiv" id="cAndR">
+                <h3>Requested by BRS1 | Cancel and Replace collection</h3>
+                <p>Hi,<br>This run is scheduled too early to utilize this trailer. Please cancel it and reschedule closer to cpt.<br>Thanks<br>
+                </p>
+            </div>
+            <div class="caseDiv" id="cancel1">
+                <h3>Requested by BRS1 | Cancel collection</h3>
+                <p>Hi,<br>We have no volume for this run. Please cancel.<br>Thanks<br>
+                </p>
+            </div>
+            <div class="caseDiv" id="cancel2">
+                <h3>Requested by BRS1 | Cancel collection</h3>
+                <p>Hi,<br>We have x trailers scheduled and only require x. Please cancel.<br>Thanks<br>
+                </p>
+            </div>
+            <div class="caseDiv" id="recover">
+                <h3>Requested by BRS1 | Recover collection</h3>
+                <p>Hi,<br>ATS trailer VS-xxx needs to be recovered from BRS1 due to late arrival. Please send a SOLO truck to recover this trailer for VRID xxx.<br>Thanks<br>
+                </p>
+            </div>
+           
+        </div>
+        <div class="caseContainer">
+            <div><p>brs1-shipping@amazon.com</p>      
+            </div>
+            <div><p>eu-roc-ob-cancel-truck@amazon.com</p>
+            </div>
+            <div><p>amazon@royalmail.com<p>   
+            </div>
+
+        </div>
+    </div>
+    <div class="roleContainer">
+        <h2>Escalation</h2>
+        <div class="caseContainer">
+            <div><p>eu-roc-dm-escalation-level1@amazon.com</p></div>
+            <div><p>eu-roc-dm-escalation-level2@amazon.com</p></div>
+            <div><p>eu-roc-dm-escalation-level3@amazon.com</p></div>
+            <div><p>eu-roc-dm-snrmanagers@amazon.com</p></div>
+
+
+        </div>
+    </div>
+    <div w3-include-html="./elements/footer.html" class="cright">    
+    <script>
+            w3IncludeHTML();
+            </script>
+    <script>
+        buttonFunc = (name)=>{
+            let num = document.getElementById("number").value;
+            let newNum = num -1;
+            let vrid = document.getElementById("vrid").value;
+            let trailer = document.getElementById("trailer").value;
+            console.log(num);
+            console.log(newNum);
+            console.log(vrid);
+           console.log("Button pressed");
+           document.getElementById("AH").innerHTML = "<h3>Requested by BRS1 | AdHoc collection</h3><p>Hi,<br>Please can we have an adhoc collection for this run? We believe we will overspill this trailer by " +num+ " carts.<br>Thanks<br>" + name +"</p>"
+           document.getElementById("cAndR").innerHTML = "<h3>Requested by BRS1 | Cancel and Replace collection</h3><p>Hi,<br>This run is scheduled too early to utilize this trailer. Please cancel it and reschedule closer to cpt.<br>Thanks<br>" +name+"</p>"
+           document.getElementById("cancel1").innerHTML = "<h3>Requested by BRS1 | Cancel collection</h3><p>Hi,<br>We have no volume for this run. Please cancel.<br>Thanks<br>" + name +"</p>"
+           document.getElementById("cancel2").innerHTML = "<h3>Requested by BRS1 | Cancel collection</h3><p>Hi,<br>We have " +num+" trailers scheduled and only require "+newNum+". Please cancel.<br>Thanks<br>" + name +"</p>"
+           document.getElementById("recover").innerHTML = "<h3>Requested by BRS1 | Recover collection</h3><p>Hi,<br>ATS trailer "+trailer+" needs to be recovered from BRS1 due to late arrival. Please send a SOLO truck to recover this trailer for VRID "+vrid+".<br>Thanks<br>" + name +"</p>"; 
+       
+       
+       
+       
+        };
+    </script>
+    <script>
+        
+        copyFunc = async(copyText)=> {
+        let text = document.getElementById(copyText).innerHTML;
+        console.log(text);
+                  try {
+            await navigator.clipboard.writeText(text);
+            console.log('Content copied to clipboard');
+          } catch (err) {
+            console.error('Failed to copy: ', err);
+          }
+        }
+      </script>
+
+</body>
+
+</html>
