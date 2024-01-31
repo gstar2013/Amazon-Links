@@ -12,6 +12,7 @@
         @import url('https://fonts.cdnfonts.com/css/amazon-ember');
     </style>
     <link rel="icon" type="image/x-icon" href="./img/Amazon_icon.png">
+    <script src="https://kit.fontawesome.com/8051d778ab.js" crossorigin="anonymous"></script>
 </head>
 <script src="https://www.w3schools.com/lib/w3data.js"></script>
 
@@ -39,39 +40,60 @@
           
 
         <div class="caseContainer">
-            <div class="caseDiv" id="AH">
-                <h3>Requested by BRS1 | AdHoc collection</h3>
-                <p>Hi,<br>Please can we have an adhoc collection for this run? We believe we will overspill this trailer by xx carts.<br>Thanks<br>
+            <div class="caseDiv" >
+                <div class="caseTitle">
+                    <h3 id="AHcopy" onclick="copyFunc('AHcopy')">Requested by BRS1 | AdHoc collection</h3>
+                    <i class="fa-sharp fa-regular fa-copy" onclick="copyFunc('AHcopy')"></i>
+                </div>
+                <p id="AH" onclick="copyFunc('AH')">Hi,<br>Please can we have an adhoc collection for this run? We believe we will overspill this trailer by xx carts.<br>Thanks<br>
                 </p>
+                <i class="fa-sharp fa-regular fa-copy" onclick="copyFunc('AH')" class="copyIcon"></i>
+
             </div>
-            <div class="caseDiv" id="cAndR">
-                <h3>Requested by BRS1 | Cancel and Replace collection</h3>
-                <p>Hi,<br>This run is scheduled too early to utilize this trailer. Please cancel it and reschedule closer to cpt.<br>Thanks<br>
+            <div class="caseDiv" >
+                <div class="caseTitle">
+                    <h3 id="cAndRCopy" onclick="copyFunc('cAndRCopy')">Requested by BRS1 | Cancel and Replace collection</h3>
+                    <i class="fa-sharp fa-regular fa-copy" onclick="copyFunc('cAndRCopy')" class="copyIconTitle"></i>
+                </div>
+                <p id="cAndR" onclick="copyFunc('cAndR')">Hi,<br>This run is scheduled too early to utilize this trailer. Please cancel it and reschedule closer to cpt.<br>Thanks<br>
                 </p>
+                <i class="fa-sharp fa-regular fa-copy" onclick="copyFunc('cAndR')" class="copyIcon"></i>
             </div>
-            <div class="caseDiv" id="cancel1">
-                <h3>Requested by BRS1 | Cancel collection</h3>
-                <p>Hi,<br>We have no volume for this run. Please cancel.<br>Thanks<br>
+            <div class="caseDiv" >
+                <div class="caseTitle">
+                    <h3 id="cancel1Copy" onclick="copyFunc('cancel1Copy')">Requested by BRS1 | Cancel collection</h3>
+                    <i class="fa-sharp fa-regular fa-copy" onclick="copyFunc('cancel1Copy')" class="copyIconTitle"></i>
+                </div>
+                <p id="cancel1" onclick="copyFunc('cancel1')">Hi,<br>We have no volume for this run. Please cancel.<br>Thanks<br>
                 </p>
+                <i class="fa-sharp fa-regular fa-copy" onclick="copyFunc('cancel1')" class="copyIcon"></i>
             </div>
-            <div class="caseDiv" id="cancel2">
-                <h3>Requested by BRS1 | Cancel collection</h3>
-                <p>Hi,<br>We have x trailers scheduled and only require x. Please cancel.<br>Thanks<br>
+            <div class="caseDiv" >
+                <div class="caseTitle">
+                    <h3 id="cancel2Copy" onclick="copyFunc('cancel2Copy')">Requested by BRS1 | Cancel collection</h3>
+                    <i class="fa-sharp fa-regular fa-copy" onclick="copyFunc('cancel2Copy')" class="copyIconTitle"></i>
+                </div>
+                <p id="cancel2" onclick="copyFunc('cancel2')">Hi,<br>We have x trailers scheduled and only require x. Please cancel.<br>Thanks<br>
                 </p>
+                <i class="fa-sharp fa-regular fa-copy" onclick="copyFunc('cancel2')" class="copyIcon"></i>
             </div>
-            <div class="caseDiv" id="recover">
-                <h3>Requested by BRS1 | Recover collection</h3>
-                <p>Hi,<br>ATS trailer VS-xxx needs to be recovered from BRS1 due to late arrival. Please send a SOLO truck to recover this trailer for VRID xxx.<br>Thanks<br>
+            <div class="caseDiv" >
+                <div class="caseTitle">
+                    <h3 id="recoverCopy" onclick="copyFunc('recoverCopy')">Requested by BRS1 | Recover collection</h3>
+                    <i class="fa-sharp fa-regular fa-copy" onclick="copyFunc('recoverCopy')" class="copyIconTitle"></i>
+                </div>
+                <p id="recover" onclick="copyFunc('recover')">Hi,<br>ATS trailer VS-xxx needs to be recovered from BRS1 due to late arrival. Please send a SOLO truck to recover this trailer for VRID xxx.<br>Thanks<br>
                 </p>
+                <i class="fa-sharp fa-regular fa-copy" onclick="copyFunc('recover')" class="copyIcon"></i>
             </div>
            
         </div>
         <div class="caseContainer">
-            <div><p>brs1-shipping@amazon.com</p>      
+            <div><p id="cc1" onclick="copyFunc('cc1')">brs1-shipping@amazon.com</p>      
             </div>
-            <div><p>eu-roc-ob-cancel-truck@amazon.com</p>
+            <div><p id="cc2" onclick="copyFunc('cc2')">eu-roc-ob-cancel-truck@amazon.com</p>
             </div>
-            <div><p>amazon@royalmail.com<p>   
+            <div><p id="cc3" onclick="copyFunc('cc3')">amazon@royalmail.com<p>   
             </div>
 
         </div>
@@ -79,10 +101,10 @@
     <div class="roleContainer">
         <h2>Escalation</h2>
         <div class="caseContainer">
-            <div><p>eu-roc-dm-escalation-level1@amazon.com</p></div>
-            <div><p>eu-roc-dm-escalation-level2@amazon.com</p></div>
-            <div><p>eu-roc-dm-escalation-level3@amazon.com</p></div>
-            <div><p>eu-roc-dm-snrmanagers@amazon.com</p></div>
+            <div><p id="cc4" onclick="copyFunc('cc4')">eu-roc-dm-escalation-level1@amazon.com</p></div>
+            <div><p id="cc5" onclick="copyFunc('cc5')">eu-roc-dm-escalation-level2@amazon.com</p></div>
+            <div><p id="cc6" onclick="copyFunc('cc6')">eu-roc-dm-escalation-level3@amazon.com</p></div>
+            <div><p id="cc7" onclick="copyFunc('cc7')">eu-roc-dm-snrmanagers@amazon.com</p></div>
 
 
         </div>
@@ -101,18 +123,30 @@
             console.log(newNum);
             console.log(vrid);
            console.log("Button pressed");
-           document.getElementById("AH").innerHTML = "<h3>Requested by BRS1 | AdHoc collection</h3><p>Hi,<br>Please can we have an adhoc collection for this run? We believe we will overspill this trailer by " +num+ " carts.<br>Thanks<br>" + name +"</p>"
-           document.getElementById("cAndR").innerHTML = "<h3>Requested by BRS1 | Cancel and Replace collection</h3><p>Hi,<br>This run is scheduled too early to utilize this trailer. Please cancel it and reschedule closer to cpt.<br>Thanks<br>" +name+"</p>"
-           document.getElementById("cancel1").innerHTML = "<h3>Requested by BRS1 | Cancel collection</h3><p>Hi,<br>We have no volume for this run. Please cancel.<br>Thanks<br>" + name +"</p>"
-           document.getElementById("cancel2").innerHTML = "<h3>Requested by BRS1 | Cancel collection</h3><p>Hi,<br>We have " +num+" trailers scheduled and only require "+newNum+". Please cancel.<br>Thanks<br>" + name +"</p>"
-           document.getElementById("recover").innerHTML = "<h3>Requested by BRS1 | Recover collection</h3><p>Hi,<br>ATS trailer "+trailer+" needs to be recovered from BRS1 due to late arrival. Please send a SOLO truck to recover this trailer for VRID "+vrid+".<br>Thanks<br>" + name +"</p>"; 
+           document.getElementById("AH").innerHTML = "<p>Hi,<br>Please can we have an adhoc collection for this run? We believe we will overspill this trailer by " +num+ " carts.<br>Thanks<br>" + name +"</p>"
+           document.getElementById("cAndR").innerHTML = "<p>Hi,<br>This run is scheduled too early to utilize this trailer. Please cancel it and reschedule closer to cpt.<br>Thanks<br>" +name+"</p>"
+           document.getElementById("cancel1").innerHTML = "<p>Hi,<br>We have no volume for this run. Please cancel.<br>Thanks<br>" + name +"</p>"
+           document.getElementById("cancel2").innerHTML = "<p>Hi,<br>We have " +num+" trailers scheduled and only require "+newNum+". Please cancel.<br>Thanks<br>" + name +"</p>"
+           document.getElementById("recover").innerHTML = "<p>Hi,<br>ATS trailer "+trailer+" needs to be recovered from BRS1 due to late arrival. Please send a SOLO truck to recover this trailer for VRID "+vrid+".<br>Thanks<br>" + name +"</p>"; 
        
        
        
        
         };
-        //document.getElementById("btnSimon").addEventListener("click", buttonFunc("Simon"));
     </script>
+    <script>
+        
+        copyFunc = async(copyText)=> {
+        let text = document.getElementById(copyText).innerText;
+        console.log(text);
+                  try {
+            await navigator.clipboard.writeText(text);
+            console.log('Content copied to clipboard');
+          } catch (err) {
+            console.error('Failed to copy: ', err);
+          }
+        }
+      </script>
 
 </body>
 
